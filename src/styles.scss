@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap');
+
+$text-color: white;
+$secondary-text-color: #fce38a;
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box; // https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}

@@ -1,0 +1,70 @@
+@import "../../styles";
+
+.header{
+  position: absolute;
+  padding-top: 30px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between; // занимает крайнии позиции
+  align-items: center;
+}
+
+.header-logo{
+  a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: $text-color;
+  }
+}
+
+.nav {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav-link{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  position: relative;
+
+  color: $text-color;
+  text-decoration: none;
+  transition: color .1s linear;
+}
+
+.nav-link:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+
+  background-color: $secondary-text-color;
+  opacity: 0;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity .1s linear;
+}
+
+.nav-link:hover {
+  color: $secondary-text-color;
+}
+
+.nav-link:hover:after, .nav-link.active:after {
+  opacity: 1;
+}
+
+.nav-link.active {
+  color: $secondary-text-color;
+}
