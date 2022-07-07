@@ -1,0 +1,119 @@
+@import "../../styles";
+@import "../../section";
+@import "../../accordion";
+
+// Statistic
+
+.statistic {
+  background-color: $background-color;
+}
+
+.stat {
+  display: flex;
+}
+
+.stat-item {
+  flex: 1 1 0;
+  padding: 70px 25px;
+
+  border-left: 1px solid $text-color;
+
+  text-align: center;
+  color: $text-color;
+}
+
+.stat-item:last-child {
+  border-right: 1px solid $text-color;
+}
+
+.stat-count {
+  margin-bottom: 10px;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.stat-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+// Services
+
+.services {
+  display: flex;
+}
+
+.services-item {
+  flex: 1 1 0;
+  padding-right: 20px;
+  padding-left: 70px;
+  position: relative;
+}
+
+.services-icon {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  z-index: 1;
+}
+
+.services-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  color: $black-text-color;
+  text-transform: uppercase;
+}
+
+.services-text {
+  font-size: 15px;
+  color: #999;
+}
+
+.services-border {
+  border: 0;
+  background-color: gray;
+  display: block;
+  width: 100%;
+  margin: 40px 0;
+  height: 1px;
+}
+
+// Devices
+
+.section-devices {
+  margin-bottom: 40px;
+  padding-bottom: 0;
+  background: url("../../assets/devices-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.devices {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.devices-item {
+  display: block;
+}
+
+.devices-item-iphone {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 0;
+}
+
+// WHAT WE DO
+.wedo {
+  display: flex;
+}
+
+.wedo-item {
+  width: 50%;
+}
+
+

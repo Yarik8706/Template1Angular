@@ -1,0 +1,53 @@
+@import "../../section";
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-item {
+  width: 380px;
+  position: relative;
+
+  background-color: $background-color;
+}
+
+.about-item:hover .about-image img {
+  opacity: .1;
+}
+
+.about-item:hover .about-image {
+  transform: translate3d(-10px, -10px, 0);
+}
+
+.about-image img {
+  display: block;
+  transition: opacity .1s linear;
+}
+
+.about-image {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  transition: transform .1s linear;
+}
+
+.about-item:hover .about-text {
+  opacity: 1;
+}
+
+.about-text {
+  width: 100%;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .2s linear;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+}

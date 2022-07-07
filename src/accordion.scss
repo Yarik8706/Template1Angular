@@ -1,0 +1,77 @@
+@import "styles";
+
+.accordion-item {
+  border: 1px solid #e5e5e5;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 15px 20px 15px 60px;
+  position: relative;
+  border-bottom: 1px solid transparent;
+}
+
+.accordion-input {
+  position: absolute;
+  display: none;
+}
+
+.accordion-header:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-top: 2px solid gray;
+  border-right: 2px solid gray;
+
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion-input:checked ~ label .accordion-header:after {
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
+}
+
+.accordion-input:checked ~ label .accordion-header {
+  border-bottom-color: #e5e5e5;
+}
+
+
+
+.accordion-icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1;
+
+  transform: translateY(-50%);
+}
+
+.accordion-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.accordion-content {
+  padding: 15px 20px;
+  display: none;
+  height: 180px;
+  overflow-y: scroll;
+
+  font-size: 15px;
+  color: gray;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.accordion-input:checked ~ .accordion-content {
+  display: block;
+
+}
