@@ -1,41 +1,43 @@
 @import "../../section";
 
-.about {
+.card {
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
 }
 
-.about-item {
+.card-item {
   width: 380px;
-  position: relative;
+}
 
+.card-inner {
+  position: relative;
   background-color: $background-color;
 }
 
-.about-item:hover .about-image img {
+.card-item:hover .card-image img {
   opacity: .1;
 }
 
-.about-item:hover .about-image {
+.card-item:hover .card-image {
   transform: translate3d(-10px, -10px, 0);
 }
 
-.about-image img {
+.card-image img {
   display: block;
   transition: opacity .1s linear;
 }
 
-.about-image {
+.card-image {
   background: linear-gradient(to bottom, #f38181, #fce38a);
   transition: transform .1s linear;
 }
 
-.about-item:hover .about-text {
+.card-item:hover .card-text {
   opacity: 1;
 }
 
-.about-text {
+.card-text {
   width: 100%;
   color: $text-color;
   text-transform: uppercase;
@@ -50,4 +52,9 @@
   left: 0;
   z-index: 2;
   transform: translate3d(0, -50%, 0);
+}
+
+.card-icon {
+  width: 15px;
+  height: 15px;
 }

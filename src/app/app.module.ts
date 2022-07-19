@@ -8,6 +8,10 @@ import { IntroComponent } from './intro/intro.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MainComponent } from './main/main.component';
 import { RewiesSliderComponent } from './rewies-slider/rewies-slider.component';
+import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import {BootstrapIconsModule} from "ng-bootstrap-icons";
+import {allIcons} from "ng-bootstrap-icons/icons";
+import { BrandsComponent } from './brands/brands.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +20,16 @@ import { RewiesSliderComponent } from './rewies-slider/rewies-slider.component';
     IntroComponent,
     AboutUsComponent,
     MainComponent,
-    RewiesSliderComponent
+    RewiesSliderComponent,
+    WhoWeAreComponent,
+    BrandsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BootstrapIconsModule.pick(allIcons)
   ],
+  exports: [BootstrapIconsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
